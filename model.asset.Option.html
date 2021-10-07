@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ALFA Documentation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<div class="container-fluid" style="font-size:90%">
+    
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/..">ALFA Studio</a></li>
+    <li class="breadcrumb-item"><a href="index.html">Documentation</a></li>
+    <li class="breadcrumb-item active" aria-current="page">model.asset.Option</li>
+  </ol>
+</nav>
+        
+<h1><span style="border-radius: 5px; font-size: 25px; color: #fff; text-align: center; background: #D9B01C">&nbsp;R&nbsp;</span> Option</h1>
+
+<div class="card">
+  <div class="card-body" style="background: HoneyDew" >
+    <p>The Option derivative contract (traded on trading venues and OTC) data elements capturing all OP Trade Position data related fields.</p>
+  </div>
+</div>
+          
+<br><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="248px" preserveAspectRatio="none" style="width:235px;height:248px;" version="1.1" viewBox="0 0 235 248" width="235px" zoomAndPan="magnify"><defs><filter height="300%" id="foux79t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class model.asset.Option--><a target="_top" xlink:actuate="onRequest" xlink:href="model.asset.Option.html" xlink:show="new" xlink:title="model.asset.Option.html" xlink:type="simple"><rect fill="#FEFECE" filter="url(#foux79t)" height="117.9609" style="stroke: #A80036; stroke-width: 1.5;" width="220" x="6" y="122"/><ellipse cx="50.75" cy="140.9688" fill="#D9B01C" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M51.9531,141.1094 Q52.3125,141.1875 52.5781,141.4688 Q52.8594,141.7344 53.25,142.5156 L55.4844,146.9688 L52.7969,146.9688 L51.2969,143.8438 Q51.2344,143.7031 51.125,143.4688 Q50.4688,142.0781 49.5781,142.0781 L48.7969,142.0781 L48.7969,146.9688 L46.3594,146.9688 L46.3594,134.5781 L49.8906,134.5781 Q52.2813,134.5781 53.3125,135.4219 Q54.3594,136.2656 54.3594,138.1719 Q54.3594,139.4531 53.7344,140.2188 Q53.125,140.9688 51.9531,141.1094 Z M48.7969,136.6406 L48.7969,140.0156 L49.9531,140.0156 Q50.9688,140.0156 51.3906,139.625 Q51.8281,139.2188 51.8281,138.3125 Q51.8281,137.4219 51.3906,137.0313 Q50.9688,136.6406 49.9531,136.6406 L48.7969,136.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="55" x="104.75" y="138.1387">&#171;record&#187;</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="122" x="71.25" y="152.1074">model.asset.Option</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="225" y1="159.9375" y2="159.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="12" y="174.1479">OptionType : enum&lt; .. &gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="12" y="186.9526">OptionExerciseStyle : enum&lt; .. &gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="175" x="12" y="199.7573">StrikePrice : decimal( 20, 19 )?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="12" y="212.562">StrikePriceNotation : enum&lt; .. &gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="208" x="12" y="225.3667">MaturityDateOfTheUnderlying : date?</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="225" y1="231.9609" y2="231.9609"/></a><!--class model.asset.PositionBase--><a target="_top" xlink:actuate="onRequest" xlink:href="model.asset.PositionBase.html" xlink:show="new" xlink:title="model.asset.PositionBase.html" xlink:type="simple"><rect fill="#FEFECE" filter="url(#foux79t)" height="53.9375" style="stroke: #A80036; stroke-width: 1.5;" width="194" x="19" y="8"/><ellipse cx="34" cy="26.9688" fill="#995579" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M34.8438,33.7188 L32.3906,33.7188 L32.3906,23.4688 L29.25,23.4688 L29.25,21.3281 L37.9844,21.3281 L37.9844,23.4688 L34.8438,23.4688 L34.8438,33.7188 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="109" y="24.1387">&#171;trait&#187;</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="162" x="48" y="38.1074">model.asset.PositionBase</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="20" x2="212" y1="45.9375" y2="45.9375"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="20" x2="212" y1="53.9375" y2="53.9375"/></a><path d="M116,82.4 C116,94.97 116,108.74 116,121.88 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="109,82.08,116,62.08,123,82.08,109,82.08" style="stroke: #A80036; stroke-width: 1.0;"/></g></svg></br>
+<br/>
+
+<h3>Includes:</h3><li class='list-group-item'><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #995579">&nbsp;T&nbsp;</span>&nbsp;<a href='model.asset.PositionBase.html'>model.asset.PositionBase</a></li>
+<br/>
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-local-fields-tab" data-toggle="tab" href="#nav-local-fields" role="tab" aria-controls="nav-local-fields" aria-selected="true">Local  Fields</a>
+      
+
+    <a class="nav-item nav-link" id="nav-inherited-fields-tab" data-toggle="tab" href="#nav-inherited-fields" role="tab" aria-controls="nav-inherited-fields" aria-selected="false">Inherited Fields</a>
+        
+
+  </div>
+</nav>
+      
+
+<div class="tab-content" id="nav-tabContent">
+      
+
+<div class="tab-pane fade show active" id="nav-local-fields" role="tabpanel" aria-labelledby="nav-local-fields-tab">
+      
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th scope='col'>Name</th>
+      <th scope='col'>Datatype</th>
+      <th scope='col'>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><a id="OptionType">OptionType</a></td>
+        <td><i>enum< P, C, O ></i> <b>?</b></td>
+        <td><p>Indicates whether the derivative contract is a call (right to purchase a specific underlying asset) or a put (right to sell a specific underlying asset) or whether it cannot be determined whether it is a call or a put at the time of execution of the derivative contract.</p>
+<ul>
+<li>P = Cut</li>
+<li>C = Call</li>
+<li>O = where it cannot be determined whether it is a call or a put</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="OptionExerciseStyle">OptionExerciseStyle</a></td>
+        <td><i>enum< A, B, E, S ></i> <b>?</b></td>
+        <td><p>Indicates whether the option may be exercised only at a fixed date (European, and Asian style), a series of pre-specified dates (Bermudan) or at any time during the life of the contract (American style)
+A = American
+B = Bermudan
+E = European
+S = Asian
+More than one value is allowed</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="StrikePrice">StrikePrice</a></td>
+        <td><i>decimal(20, 19)</i> <b>?</b></td>
+        <td><p>The strike price of the option (cap/floor rate)</p>
+<p>Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.
+The negative symbol, if populated, is not counted as a numerical character.
+In case the Strike price is reported in percent values, it should be expressed as percentage where 100% is represented as “100”
+&quot;999999999999999.99999&quot; is accepted when the actual value is not available.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="StrikePriceNotation">StrikePriceNotation</a></td>
+        <td><i>enum< U, P, Y ></i> <b>?</b></td>
+        <td><p>The manner in which the strike price is expressed
+U = Units
+P = Percentage
+Y = Yield</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="MaturityDateOfTheUnderlying">MaturityDateOfTheUnderlying</a></td>
+        <td><i>date</i> <b>?</b></td>
+        <td><p>In case of swaptions, maturity date of the underlying swap
+ISO 8601 date in the format YYYY-MM-DD</p>
+</td>
+    </tr>
+
+  </tbody>
+</table>
+      
+
+<br/>
+
+
+</div>
+<div class="tab-pane fade" id="nav-inherited-fields" role="tabpanel" aria-labelledby="nav-inherited-fields-tab">
+      
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th scope='col'>Name</th>
+      <th scope='col'>Datatype</th>
+      <th scope='col'>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><a id="ActionType">ActionType</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.PositionActionType.html'>model.asset.PositionActionType</a></td>
+        <td><p><strong>Whether the report contains one of :</strong></p>
+<ul>
+<li>a derivative contract for the first time, in which case it will be identified as ‘new’;</li>
+<li>a modification to the terms or details of a previously reported derivative contract, but not a correction of a report, in which case it will be identified as ‘modify’.
+This includes an update to a previous report that is showing a position
+in order to reflect new trades included in that position.;</li>
+<li>a cancellation of a wrongly submitted entire report in case the contract never came into existence or was not subject to Regulation (EU) No 648/ 2012 reporting requirements
+but was reported to a Trade Repository by mistake, in which case, it will be identified as ‘error’;</li>
+<li>an early termination of an existing contract, in which case it will be identified as ‘early termination’;</li>
+<li>a previously submitted report contains erroneous data fields, in which case the report correcting the erroneous data fields of the previous report shall be identified as ‘correction’;</li>
+<li>a compression of the reported contract, in which case it will be identified as ‘compression’;</li>
+<li>an update of a contract valuation or collateral, in which case it will be identified as ‘valuation update’;</li>
+<li>a derivative contract that is to be reported as a new trade and also included in a separate position report on the same day, in which case it will be identified as a ‘position component’.
+This value will be equivalent to reporting a new trade followed by an update to that report showing it as compressed.</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="TradeID">TradeID</a></td>
+        <td>string(1, 52)</td>
+        <td><p>Special characters are not allowed at the beginning and at the end of the code. No space allowed.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ComplexTradeComponentID">ComplexTradeComponentID</a></td>
+        <td>string(1, 35)</td>
+        <td><p>Identifier, internal to the reporting firm to identify and link all the reports related to the same derivative contract
+composed of a combination of derivative contracts. The code must be unique at the level of the counterparty to the group of
+transaction reports resulting from the derivative contract.
+Field applicable only when a firm executes a  derivative contract composed of two or more derivatives contract and where this
+contract cannot be adequately reported in a single report.
+TODO: Only capital letters allowed</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="PortfolioID">PortfolioID</a></td>
+        <td>string(1, 52)</td>
+        <td><p> A unique number for the group of reports which relate to the same execution of a derivative contract</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="BookID">BookID</a></td>
+        <td>string(1, 52)</td>
+        <td><p>A unique number of the basic unit of the firm's hierarchy where risk monitored and controlled</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="VenueOfExecution">VenueOfExecution</a></td>
+        <td>org.iso.MktIdISO10383</td>
+        <td><p>The venue of execution of the derivative contract shall be identified by a unique code for this venue.
+Where a contract was concluded OTC and the respective instrument is admitted to trading or traded on a trading venue, MIC code ‘ XOFF’ shall be used.
+Where a contract was concluded OTC and the respective instrument is not admitted to trading or traded on a trading venue, MIC code ‘XXXX’ shall be used.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Compression">Compression</a></td>
+        <td>enum< Y, N ></td>
+        <td><p>Identify whether the contract results from a compression operation as defined in Article 2(1)(47) of Regulation (EU) No 600/2014.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="PriceOrRate">PriceOrRate</a></td>
+        <td>decimal(20, 6)</td>
+        <td><p>Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.
+The negative symbol, if populated, is not counted as a numerical character.
+In case the price is reported in percent values, it should be expressed as percentage where 100% is represented as “100”
+&quot;999999999999999.99999&quot; is accepted when the actual value is not available.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="PriceNotation">PriceNotation</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.PriceNotationType.html'>model.asset.PriceNotationType</a></td>
+        <td><p>The manner in which the price is expressed</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfPrice">CurrencyOfPrice</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>The currency in which the Price / rate is denominated ISO 4217 Currency Code, 3 alphabetic characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Notional">Notional</a></td>
+        <td>decimal(20, 6)</td>
+        <td><p>The reference amount from which contractual payments are
+determined. In case of partial terminations, amortisations and in case
+of contracts where the notional, due to the characteristics of the
+contract, varies over time, it shall reflect the remaining notional
+after the change took place.</p>
+<p>Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented with a  dot.
+Negative values are allowed only when field 1.33 is populated with CO. The negative symbol, if populated, is not counted as a numerical character.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="PriceMultiplier">PriceMultiplier</a></td>
+        <td>decimal(20, 19, 0.0, *)</td>
+        <td><p>The number of units of the financial instrument which are contained in a trading lot; for example, the number of derivatives represented by the contract
+Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Quantity">Quantity</a></td>
+        <td>decimal(20, 6, 0.0, *)</td>
+        <td><p>Number of contracts included in the report.
+For spread bets, the quantity shall be the monetary value wagered per point movement in the direct underlying financial instrument.
+Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="UpfrontPayment">UpfrontPayment</a></td>
+        <td><i>decimal(20, 6)</i> <b>?</b></td>
+        <td><p>Amount of any up-front payment the reporting counterparty made or received. Up to 20 numerical characters including decimals.
+The negative symbol to be used to indicate that the payment was made, not received.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.
+The negative symbol, if populated, is not counted as a numerical character.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="DeliveryType">DeliveryType</a></td>
+        <td>enum< C, P, O ></td>
+        <td><p>Indicates whether the contract is settled physically or in cash</p>
+<ul>
+<li>C = Cash</li>
+<li>P = Physical</li>
+<li>O = Optional for counterparty or when determined by a third party</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ExecutionTimestamp">ExecutionTimestamp</a></td>
+        <td>datetime</td>
+        <td><p>Date and time when the contract was executed. ISO 8601 date in the UTC time format YYYY-MM-DDThh:mm:ssZ</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="EffectiveDate">EffectiveDate</a></td>
+        <td>date</td>
+        <td><p>Date when obligations under the contract come into effect. ISO 8601 date in the format YYYY-MM-DD</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="MaturityDate">MaturityDate</a></td>
+        <td><i>date</i> <b>?</b></td>
+        <td><p>Original date of expiry of the reported contract.
+An early termination shall not be reported in this field. ISO 8601 date in the format YYYY-MM-DD</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="TerminationDate">TerminationDate</a></td>
+        <td><i>date</i> <b>?</b></td>
+        <td><p>Termination date in the case of an early termination of the reported contract. ISO 8601 date in the format YYYY-MM-DD</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="SettlementDate">SettlementDate</a></td>
+        <td><i>date</i> <b>?</b></td>
+        <td><p>Date of settlement of the underlying. If more than one, further fields may be used. ISO 8601 date in the format YYYY-MM-DD</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="MasterAgreementType">MasterAgreementType</a></td>
+        <td><i>string(1, 50)</i> <b>?</b></td>
+        <td><p>Reference to any master agreement, if existent (e.g. ISDA Master Agreement; Master Power Purchase and Sale Agreement; International ForEx Master Agreement;
+European Master Agreement or any local Master Agreements).Free Text, field of up to 50 characters, identifying the name of the Master Agreement used, if any</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="MasterAgreementVersion">MasterAgreementVersion</a></td>
+        <td><i>date("YYYY")</i> <b>?</b></td>
+        <td><p>Reference to the year of the master agreement version used for the reported trade, if applicable (e.g. 1992, 2002, etc.)ISO 8601 date in the format YYYY</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ContractType">ContractType</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.ContractTypeType.html'>model.asset.ContractTypeType</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a id="AssetClass">AssetClass</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.AssetClassType.html'>model.asset.AssetClassType</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a id="ProductClassificationType">ProductClassificationType</a></td>
+        <td>enum< C, U ></td>
+        <td><p>The type of relevant product classification</p>
+<ul>
+<li>C = CFI</li>
+<li>U = UPI</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ProductClassification">ProductClassification</a></td>
+        <td>org.iso.ProdClassIso10692</td>
+        <td><p>For products identified through International Securities Identification Number (ISIN) or Alternative Instrument Identifier (AII),
+Classification of Financial Instrument (CFI) code shall be specified.
+For products for which ISIN or AII are not available, endorsed Unique Product Identifier (UPI) shall be specified. Until UPI is
+endorsed those products shall be classified with CFI code.ISO 10692 CFI, 6 characters alphabetical code Endorsed UPI</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ProductIdentificationType">ProductIdentificationType</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.ProductIdType.html'>model.asset.ProductIdType</a></td>
+        <td><p>The type of relevant product identificationSpecify the applicable identification:</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ProductIdentification">ProductIdentification</a></td>
+        <td><i>string</i> <b>?</b></td>
+        <td><p>The product shall be identified through ISIN or AII. AII shall be used if a product is traded in a trading venue classified as AII in the
+register published on ESMA's website and set up on the basis of information provided by
+competent authorities pursuant to Article 13(2) of Commission Regulation (EC) No 1287/2006 as it had effect in EU law before exit day.
+AII shall only be used until 3 January 2018. For product identifier type I: ISO 6166 ISIN 12 character alphanumerical code
+For product identifier type A: Complete AII code in accordance with Article  4(6)</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="UnderlyingIdentificationType">UnderlyingIdentificationType</a></td>
+        <td><i><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.UnderlyingIdType.html'>model.asset.UnderlyingIdType</a></i> <b>?</b></td>
+        <td><p>The type of relevant underlying identifier</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="UnderlyingIdentification">UnderlyingIdentification</a></td>
+        <td><i>string</i> <b>?</b></td>
+        <td><p>The direct underlying shall be identified by using a unique identification for this underlying based on its type.
+AII shall only be used until 3 January 2018.
+For Credit Default Swaps, the ISIN of the reference obligation should be provided.
+In case of baskets composed, among others, of financial instruments traded in a trading venue, only financial instruments traded in a trading venue
+shall be specified. For underlying identification type I: ISO 6166 ISIN 12 character alphanumerical code
+For underlying identification type A: complete AII code in accordance with Article 4(6)
+For underlying identification type U: UPI
+For underlying identification type B: all individual components identification through ISO 6166 ISIN or complete AII code in accordance with Article 4(6).
+Identifiers of individual components shall be separated with a dash “-“.
+For underlying identification type X: ISO 6166 ISIN if available, otherwise full name of the index as assigned by the index provider</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="NotionalCurrency1">NotionalCurrency1</a></td>
+        <td>org.iso.CcyISO4217</td>
+        <td><p>The currency of the notional amount.
+In the case of an interest rate or currency derivative contract, this will be the notional currency of leg 1.ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="NotionalCurrency2">NotionalCurrency2</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>The other currency of the notional amount. In the case of an interest rate or currency derivative contract, this will be the notional currency of leg 2.ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="DeliverableCurrency">DeliverableCurrency</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>The currency to be deliveredISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="BookingCounterpartyID">BookingCounterpartyID</a></td>
+        <td>org.iso.LeiISO17442</td>
+        <td><p>Unique code identifying the booking counterparty of the contract. ISO 17442 Legal Entity Identifier (LEI) 20 alphanumerical character code.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="TypeOfIDOfTheOtherCounterparty">TypeOfIDOfTheOtherCounterparty</a></td>
+        <td><i><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.CounterpartyIdType.html'>model.asset.CounterpartyIdType</a></i> <b>?</b></td>
+        <td><p>Type of the code used to identify the other Counterparty“LEI” for ISO 17442 Legal Entity Identifier (LEI) “CLC” for Client code</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="IDOfTheOtherCounterparty">IDOfTheOtherCounterparty</a></td>
+        <td><i>string(1, 50)</i> <b>?</b></td>
+        <td><p>Unique code identifying the other counterparty of the contract.
+This field shall be filled from the perspective of the reporting counterparty. In case of a private individual a client code shall be used
+in a consistent manner.
+ISO 17442 Legal Entity Identifier (LEI) 20 alphanumerical character code.
+Client code (up to 50 alphanumerical digits).</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CountryOfTheOtherCounterparty">CountryOfTheOtherCounterparty</a></td>
+        <td>org.iso.CountryCodeISO3166</td>
+        <td><p>The code of country where the registered office of the other counterparty is located or country of residence in case that the
+other counterparty is a natural person.ISO 3166 - 2 character country code</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CorporateSectorOfTheBookingCounterparty">CorporateSectorOfTheBookingCounterparty</a></td>
+        <td><i>string</i> <b>?</b></td>
+        <td><p>Nature of the booking counterparty's company activities.
+If the Booking Counterparty is a Financial Counterparty, this field shall contain all necessary codes included in the Taxonomy for Financial Counterparties
+and applying to that Counterparty.
+If the Booking Counterparty is a Non-Financial Counterparty, this field shall contain all necessary codes included in the Taxonomy for Non-Financial
+Counterparties and applying to that Counterparty.
+Where more than one activity is reported, the codes shall be populated in order of the relative importance of the corresponding activities.</p>
+<p>Taxonomy for Financial Counterparties :</p>
+<ul>
+<li>C = Credit institution which is a CRR firm (within the definition in Article 4(1)(2A) of the Capital Requirements Regulation)</li>
+<li>F = Investment firm within the meaning given in Article 2(1A) of the MIFIR which:
+<ol>
+<li>has its registered office or head office in the United Kingdom;</li>
+<li>has permission under Part 4A of FSMA  to carry on regulated activities relating to investment services and activities (as defined in Article 2(1)(2) of the MIFIR) in the United Kingdom;</li>
+<li>would require authorisation under Directive 2014/65/EU (as it had effect immediately before exit day) if it had its registered office (or if it does not have a registered office, its head offices) in an EEA state; and</li>
+<li>is not a firm which has permission under Part 4A of the FSMA to carry on regulated activities as an exempt investment firm, within the meaning of regulation 8 of the Financial Services and Markets Act 2000 (Markets in Financial Instruments) Regulations 2017;</li>
+</ol>
+</li>
+<li>I = Insurance undertaking as defined in section 417 of the FSMA</li>
+<li>L = AIF (within the definition in regulation 3 of the Alternative Investment Fund Managers Regulations 2013) AIFMs (within the definition in regulation 4 of those Regulations) authorised or registered in accordance with those regulations</li>
+<li>O = Institution for occupational retirement provision within the meaning of section 1(1) of the Pension Schemes Act 1993</li>
+<li>R = Reinsurance undertaking as defined in section 417 of the FSMA</li>
+<li>U = UK UCITS (within the definition in section 237(3) of the FSMA) and its management company (within the definition in section 237(2) of the FSMA) Taxonomy for Non-Financial Counterparties. The following categories correspond to the main sections of Statistical Classification of economics activities in the European Community (NACE) as defined in Regulation</li>
+</ul>
+<p>(EC) No 1893/2006 of the European Parliament and of the Council:</p>
+<ul>
+<li>1 = Agriculture, forestry and fishing</li>
+<li>2 = Mining and quarrying</li>
+<li>3 = Manufacturing</li>
+<li>4 = Electricity, gas, steam and air conditioning supply</li>
+<li>5 = Water supply, sewerage, waste management and remediation activities</li>
+<li>6 = Construction</li>
+<li>7 = Wholesale and retail trade, repair of motor vehicles and motorcycles</li>
+<li>8 = Transportation and storage</li>
+<li>9 = Accommodation and food service activities</li>
+<li>10 = Information and communication</li>
+<li>11 = Financial and insurance activities</li>
+<li>12 = Real estate activities</li>
+<li>13 = Professional, scientific and technical activities</li>
+<li>14 = Administrative and support service activities</li>
+<li>15 = Public administration and defence; compulsory social security</li>
+<li>16 = Education</li>
+<li>17 = Human health and social work activities</li>
+<li>18 = Arts, entertainment and recreation</li>
+<li>19 = Other service activities</li>
+<li>20 = Activities of households as employers; undifferentiated goods – and services –producing activities of households for own use</li>
+<li>21 = Activities of extraterritorial organisations and bodies</li>
+</ul>
+<p>Where more than one activity is reported, list the codes in order of the relative importance  of the corresponding activities, separating them with -.
+Leave blank in the case of CCPs and other type of counterparties in accordance with Article 1 (5)  of Regulation   (EU) No 648/2012.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="NatureOfTheBookingCounterparty">NatureOfTheBookingCounterparty</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.NatureOfBookingCptyType.html'>model.asset.NatureOfBookingCptyType</a></td>
+        <td><p>Indicate if the booking counterparty is a CCP, a financial, non-financial counterparty or other type of counterparty in accordance
+with point 5 of Article 1 or points 1, 8 and 9 of Article 2 of Regulation (EU) No 648/2012 of the
+European Parliament and of the Council.</p>
+<ul>
+<li>F = Financial Counterparty</li>
+<li>N = Non-Financial Counterparty</li>
+<li>C = Central Counterparty</li>
+<li>O = Other</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ValueOfContract">ValueOfContract</a></td>
+        <td>decimal(20, 6)</td>
+        <td><p>Mark to market valuation of the contract, or mark to model valuation where applicable under Article 11(2) of Regulation (EU) No 648/2012.
+The CCP’s valuation to be used for a cleared tradeUp to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.
+The negative symbol, if populated, is not counted as a numerical character.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheValue">CurrencyOfTheValue</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>The currency used for the valuation of the contract. ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ValuationTimestamp">ValuationTimestamp</a></td>
+        <td><i>datetime</i> <b>?</b></td>
+        <td><p>Date and time of the last valuation. For mark-to-market valuation the date and time of publishing of reference prices shall be reported.
+ISO 8601 date in the UTC time format YYYY-MM-DDThh:mm:ssZ</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Valuationtype">Valuationtype</a></td>
+        <td><i>enum< CCPM, O, C ></i> <b>?</b></td>
+        <td><p>Indicate whether valuation was performed mark to market, mark to model or provided by the</p>
+<ul>
+<li>CCPM = Mark-to-market</li>
+<li>O = Mark-to-model</li>
+<li>C = CCP’s valuation.</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Collateralisation">Collateralisation</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.CollateralisationType.html'>model.asset.CollateralisationType</a></td>
+        <td><p>Indicate whether a collateral agreement between the counterparties exists.</p>
+<ul>
+<li>U = uncollateralised</li>
+<li>PC = partially collateralised</li>
+<li>OC = one way collateralised</li>
+<li>FC = fully collateralised
+Populated in accordance with Article 3b</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CollateralPortfolio">CollateralPortfolio</a></td>
+        <td><span style="border-radius: 3px; font-size: 12px; color: #fff; text-align: center; background: #86B0BE">&nbsp;Em&nbsp;</span>&nbsp;<a href='model.asset.CollateralPortfolioFlag.html'>model.asset.CollateralPortfolioFlag</a></td>
+        <td><p>Whether the collateralisation was performed on a portfolio basis.
+Portfolio means the collateral calculated on the basis of net positions resulting from a set of contracts, rather than per trade.</p>
+<ul>
+<li>Y = Yes</li>
+<li>N = No</li>
+</ul>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CollateralPortfolioCode">CollateralPortfolioCode</a></td>
+        <td><i>string(1, 52)</i> <b>?</b></td>
+        <td><p>If collateral is reported on a portfolio basis, the portfolio should be identified by a unique code determined by the reporting
+counterpartyUp to 52 alphanumerical characters including four special characters : . - _.
+Special characters are not allowed at the beginning and at the end of the code. No space allowed.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="InitialMarginPosted">InitialMarginPosted</a></td>
+        <td><i>decimal(20, 6)</i> <b>?</b></td>
+        <td><p>Value of the initial margin posted by the reporting counterparty to the other counterparty.
+Where initial margin is posted on a portfolio basis, this field should include the overall value of initial margin posted for the portfolio.
+Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheInitialMarginPosted">CurrencyOfTheInitialMarginPosted</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of the initial margin posted. ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="VariationMarginPosted">VariationMarginPosted</a></td>
+        <td><i>decimal(20, 6, 0.0, *)</i> <b>?</b></td>
+        <td><p>Value of the variation margin posted, including cash settled, by the reporting counterparty to the other counterparty.
+Where variation margin is posted on a portfolio basis, this field should include the overall value of variation margin posted for the portfolio.Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheVariationMarginsPosted">CurrencyOfTheVariationMarginsPosted</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of variation margin posted. ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="InitialMarginReceived">InitialMarginReceived</a></td>
+        <td><i>decimal(20, 19, 0.0, *)</i> <b>?</b></td>
+        <td><p>Value of the initial margin received by the reporting counterparty from the other counterparty.
+Where initial margin is received on a portfolio basis, this field should include the overall value of initial margin received for the portfolio.
+Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheInitialMarginReceived">CurrencyOfTheInitialMarginReceived</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of the initial margin receivedISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="VariationMarginReceived">VariationMarginReceived</a></td>
+        <td><i>decimal(20, 6)</i> <b>?</b></td>
+        <td><p>Value of the variation margin received, including cash settled, by the reporting counterparty from the other counterparty.
+Where variation margin is received on a portfolio basis, this field should include the overall value of variation margin received for the portfolio.
+Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheVariationMarginsReceived">CurrencyOfTheVariationMarginsReceived</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of the variation margin received. ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ExcessCollateralPosted">ExcessCollateralPosted</a></td>
+        <td><i>decimal(20, 19, 0.0, *)</i> <b>?</b></td>
+        <td><p>Value of collateral posted in excess of the required collateral Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheExcessCollateralPosted">CurrencyOfTheExcessCollateralPosted</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of the excess collateral posted ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="ExcessCollateralReceived">ExcessCollateralReceived</a></td>
+        <td><i>decimal(20, 6, 0.0, *)</i> <b>?</b></td>
+        <td><p>Value of collateral received in excess of the required collateral. Up to 20 numerical characters including decimals.
+The decimal mark is not counted as a numerical character. If populated, it shall be represented by a dot.</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="CurrencyOfTheExcessCollateralReceived">CurrencyOfTheExcessCollateralReceived</a></td>
+        <td><i>org.iso.CcyISO4217</i> <b>?</b></td>
+        <td><p>Specify the currency of the excess collateral received ISO 4217 Currency Code, 3 alphabetical characters</p>
+</td>
+    </tr>
+    <tr>
+        <td><a id="Cleared">Cleared</a></td>
+        <td>enum< Y, N ></td>
+        <td><p>Indicates, whether clearing has taken place</p>
+<ul>
+<li>Y = Yes</li>
+<li>N = No</li>
+</ul>
+</td>
+    </tr>
+
+  </tbody>
+</table>
+      
+</div>
+</div>
+</html>
+
